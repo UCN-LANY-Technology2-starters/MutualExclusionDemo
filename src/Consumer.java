@@ -1,10 +1,10 @@
 
 public class Consumer extends Thread {
 
-	private Bufferable storage;
+	private Buffer storage;
 	
 	// Constructor
-	public Consumer(Bufferable buffer) {
+	public Consumer(Buffer buffer) {
 		super("Consumer");
 
 		this.storage = buffer;

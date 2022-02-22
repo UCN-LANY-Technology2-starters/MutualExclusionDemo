@@ -1,10 +1,10 @@
 
 public class Producer extends Thread {
 
-	private Bufferable storage;
+	private Buffer storage;
 
 	// Constructor
-	public Producer(Bufferable buffer) {
+	public Producer(Buffer buffer) {
 		super("Producer");
 
 		this.storage = buffer;

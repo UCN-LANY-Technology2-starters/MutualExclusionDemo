@@ -3,7 +3,7 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		Bufferable sharedStorage = (Bufferable) new UnsynchronizedBuffer();
+		Buffer sharedStorage = new Buffer();
 		
 		Producer producer = new Producer(sharedStorage);
 		Consumer consumer = new Consumer(sharedStorage);

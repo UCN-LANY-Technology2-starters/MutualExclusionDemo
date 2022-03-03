@@ -21,7 +21,7 @@ public class Producer extends Thread {
 		for (int v = 1; v <= 4; v++) {
 
 			try {
-
+					
 				int res = this.storage.setValue(v);
 				System.out.println("Produced value " + res);
 				total += res;
